@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dennis Zhan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<div class ="text-image-container">
+							<div class="text-image-container-image">
+								<img src = "images/headshot.jfif">
+							</div>
+							<div class="text-image-container-text">
+								<h1>Dennis Zhan</h1>
+								<p>Hi, my name is Dennis Zhan and I am a data analyst with experience <br /> 
+									in management consulting. I am passionate about turning data <br />
+									into insights and actionable recommendations.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects & Writing</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+				<!-- About Page -->
+				<article id="about">
+					<h2 class="major">About</h2>
+					<p>As a management consultant, my experience has allowed me to leverage data to drive decision making and solve complex business problems. I have worked on numerous projects across a variety of industries where I have collected and analyzed data to provide insights and recommendations to clients. <br /><br /> 
+						I feel that I have only scratched the surface in terms of my data analysis skills and would like to dive deeper into the field of data analytics. I am confident that my experience allows me to excel in data analytics, and I am excited to apply my analytical and problem-solving skills to drive meaningful impact for organizations.<br /><br />
+						I have high proficiency with SQL, SAS, VBA, and PowerBI, with medium proficiency using Python. </p>
+					<div class="resume">
+						<a href="images/DZhan_Resume.pdf" target="_blank">
+							<button class="primary">View my Résumé</button>
+						</a>
+					</div>
+				</article>
+
+				<!-- Work Page -->
+				<article id="projects">
+					<h2 class="major">Projects & Writing</h2>
+						<div class ="text-image-container">
+							<div class="text-image-container-image">
+								<img src = "images/2048.png">
+							</div>
+							<div class="text-image-container-text">
+								<h2>2048 Game</h2>
+								<p>Recreated the popular 2048 game in VBA with additional features like hints, autosolve, tile blocks and more.</p>
+								<a href="images/2048 Game.xlsm">
+									<button class="primary">Download File</button>
+								</a>
+							</div>
+						</div>
+					<hr />
+						<div class ="text-image-container">
+							<div class="text-image-container-image">
+								<img src = "images/gilead.png">
+							</div>
+							<div class="text-image-container-text">
+								<h2>GILEAD: CULTIVATING THE PIPELINE</h2>
+								<p>In order to restore investor confidence and hedge legacy market downturns, Gilead needs to diversify into other channels of sustainable revenue generation to minimize volatility.</p>
+								<a href = "https://iveybusinessreview.ca/5732/gilead-cultivating-pipeline/" target="_blank">
+									<button class="primary">Read Article</button>
+								</a>	
+							</div>
+						</div>
+					<hr />
+					<div class ="text-image-container">
+						<div class="text-image-container-image">
+							<img src = "images/ibm.png">
+						</div>
+						<div class="text-image-container-text">
+							<h2>IBM: INNOVATIONS ARE ELEMENTARY MY DEAR WATSON</h2>
+							<p>Encouraging risks at IBM helps fuel the possibilities for Watson</p>
+							<a href = "https://iveybusinessreview.ca/5571/ibm-innovations-elementary-dear-watson-encouraging-risks-ibm-helps-fuel-possibilities-watson/" target="_blank">
+								<button class="primary">Read Article</button>
+							</a>	
+						</div>
+					</div>
+				</article>
+
+				<!-- Contact Page -->
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" onclick="contact()"/></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</article>
+			</div>
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright"><i class='fas fa-map-marker-alt'></i>      Toronto, Canada | <a href = "https://www.linkedin.com/in/dennis-lin-feng-zhan/" target="_blank">LinkedIn</a> | <a href="mailto: denniszhan15@gmail.com">Email</a> | <a href="github.com/denniszhan15">Github</a></p>
+			</footer>
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			function contact() {
+				console.log(document.getElementById('name').value);
+				console.log(document.getElementById('email').value);
+				console.log(document.getElementById('message').value);
+				alert(`Thanks ${document.getElementById('name').value}, message received!`);
+			}
+		</script>
+	</body>
+</html>
